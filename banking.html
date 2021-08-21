@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baap Er Bank</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1
+            class="bg-gray-100 p-8 rounded-lg w-2/4 text-purple-500 shadow-md text-6xl font-semibold mx-auto my-5 mt-5 text-center">
+            Your
+            Banking
+            Details
+        </h1>
+    </header>
+
+
+    <main>
+
+        <!--------------------------------------
+             balane and transaction details 
+       ------------------------------------------>
+
+        <section>
+            <div class="grid grid-cols-3 gap-6 w-3/4 mx-auto text-white mt-5">
+                <div class="bg-purple-400 p-8 text-center rounded-lg shadow-2xl">
+                    <h2 class="font-semibold text-4xl mb-2">Deposit</h2>
+                    <h1 class="text-6xl font-bold">$<span id="total-diposit">00</span></h1>
+                </div>
+                <div class="bg-blue-400 p-8 text-center rounded-lg shadow-2xl">
+                    <h2 class="font-semibold text-4xl mb-2">Withdraw</h2>
+                    <h1 class="text-6xl font-bold">$<span id="withdraw-total">00</span></h1>
+                </div>
+                <div class="bg-green-400 p-8 text-center rounded-lg shadow-2xl">
+                    <h2 class="font-semibold text-4xl mb-2">Balance</h2>
+                    <h1 class="text-6xl font-bold">$<span id="balance">500</span></h1>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!--------------------------------------
+             balane and transaction system 
+       ------------------------------------------>
+
+
+        <section class="grid grid-cols-2 gap-8 w-3/4 mx-auto mt-10">
+
+            <div class="bg-red-200 p-6 rounded-lg shadow-2xl">
+                <h1 class="text-gray-700 text-2xl font-semibold text-center">Please Deposit Here</h1>
+                <p id="warning" class="text-red-600 text-center py-1"></p>
+                <input id="deposit-ammount"
+                    class="mx-auto lg:text-lg mt-3 border-purple-600 border-2 rounded px-3 py-3 w-4/5 block mb-5 focus:outline-none focus:ring focus:border-purple-300"
+                    type="number" placeholder="$ Enter the deposit ammount number">
+                <button id="deposit-btn"
+                    class="flex justify-center bg-purple-600 px-10 py-3 text-white font-semibold text-lg rounded-lg mx-auto">Deposit</button>
+            </div>
+
+
+            <div class="bg-yellow-200 p-6 rounded-lg shadow-2xl">
+                <h1 class="text-gray-700 text-2xl font-semibold text-center">Please Withdraw From Here</h1>
+                <p id="warning2" class="text-red-600 text-center py-1"></p>
+                <input id="withdraw-ammount"
+                    class="mx-auto lg:text-lg mt-3 border-purple-600 border-2 rounded px-3 py-3 w-4/5 block mb-5 focus:outline-none focus:ring focus:border-purple-300"
+                    type="number" placeholder="$ Enter the deposit ammount number">
+                <button id="withdraw-btn"
+                    class="flex justify-center bg-purple-600 px-10 py-3 text-white font-semibold text-lg rounded-lg mx-auto">Withdraw</button>
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+
+    <script src="bank.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <header>
+        <h1 class="text-6xl font-midium text-indigo-600 mt-10 text-center mb-10">Welcome To <span
+                class="font-semibold">Baap Er Bank!!!</span>
+        </h1>
+    </header>
+
+
+    <main>
+
+        <section class="rounded-lg bg-green-200 p-10 w-2/3 mx-auto">
+            <h1 class="text-4xl mb-6 text-center font-semibold">Please Login</h1>
+            <p id="validation" class="my-2 text-red-500 text-center mb-5"></p>
+            <div>
+                <input id="user-email"
+                    class="mx-auto border-purple-600 border-2 rounded px-3 py-2 w-2/4 block mb-5 focus:outline-none focus:ring focus:border-purple-300"
+                    type="email" placeholder="Write Your Email">
+                <input id="user-password"
+                    class="mx-auto focus:outline-none focus:ring focus:border-purple-300 border-purple-600 border-2 rounded px-3 py-2 w-2/4 block"
+                    type="password" placeholder="Enter Your Password">
+
+                <button id="login-btn"
+                    class="flex justify-center mt-5 bg-purple-600 px-7 py-2 text-white font-normal text-lg rounded-lg mx-auto">Login</button>
+                <a class="flex justify-center mt-10 text-blue-800" href="">Do not have account. Signup</a>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="login.js"></script>
+</body>
+
+</html>
